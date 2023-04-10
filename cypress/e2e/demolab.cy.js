@@ -34,8 +34,29 @@ it('Google Search', function(){
     cy.get('#year').click().type("2023")
     cy.wait(2000)
     cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
+    cy.wait(2000)
     cy.get('.confirm').click()
+    cy.get('.carousel-control-prev-icon').click()
+    cy.wait(2000)
+    cy.contains('Monitors').click()
+    cy.contains('Laptops').click()
+    cy.get(':nth-child(1) > .card > .card-block > .card-title > .hrefch').click()
+    cy.wait(2000)
+    cy.get('.col-sm-12 > .btn').click()
+    cy.get('#cartur').click()
+    cy.get('.col-lg-1 > .btn').click()
+    cy.get('#name').type("Shree")
+    cy.get('#country').type("India")
+    cy.get('#city').type("Pune")
+    cy.get('#card').type("QASJ123")
+    cy.get('#month').type("June")
+    cy.get('#year').type("2023")
+    cy.get('#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
+    cy.get('.confirm').click()
+    cy.get('#orderModal > .modal-dialog > .modal-content > .modal-header > .close > span').click()
 
+   
+    //cy.get('#nava').click()
 
 
 

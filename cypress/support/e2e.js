@@ -18,3 +18,9 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+//beforeEach(function(){
+   // cy.log("I'm in e2e file")
+//cy.visit("https://demoqa.com/")
+
+//})
